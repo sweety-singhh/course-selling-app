@@ -92,7 +92,7 @@ try {
         //     return res.status(401).json({errors: "Kindly login first" });
         // }
         res.clearCookie("jwt");
-     localStorage.removeItem('user');
+     // localStorage.removeItem('user');
 
     res.status(200).json({message: "Logged out successfully"});
         
