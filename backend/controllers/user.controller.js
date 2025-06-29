@@ -88,9 +88,9 @@ try {
 
  export const logout= async (req,res) =>{
     try {
-        if((!req.cookies || !req.cookies.jwt)){
-            return res.status(401).json({errors: "Kindly login first" });
-        }
+        // if((!req.cookies || !req.cookies.jwt)){
+        //     return res.status(401).json({errors: "Kindly login first" });
+        // }
         res.clearCookie("jwt");
      localStorage.removeItem('user');
 
